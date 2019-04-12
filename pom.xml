@@ -21,18 +21,22 @@
     <dependencies>
 
         <!-- Spring -->
+
+        <!-- spring-context which provides core functionality -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>${spring.framework.version}</version>
         </dependency>
 
+        <!-- Junit -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
 </project>
