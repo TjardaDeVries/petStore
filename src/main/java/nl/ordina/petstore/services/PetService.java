@@ -7,8 +7,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class PetService
 {
+    private final PetDAO petDAO;
+
     @Autowired
-    PetDAO petDAO;
+    public PetService(PetDAO petDAO) {
+        this.petDAO = petDAO;
+    }
 
     @Override
     public String toString() {
