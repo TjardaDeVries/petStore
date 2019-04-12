@@ -4,6 +4,6 @@ public class PetDAO
 {
     @Override
     public String toString() {
-        return "Hello , This is the PetDAO";
+        return "Hello, this is the PetDAO";
     }
 }
