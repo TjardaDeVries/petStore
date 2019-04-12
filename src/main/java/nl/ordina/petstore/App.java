@@ -1,13 +1,17 @@
 package nl.ordina.petstore;
 
-/**
- * Hello world!
- *
- */
-public class App 
+import nl.ordina.petstore.dao.PetDAO;
+import nl.ordina.petstore.services.PetService;
+
+public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        PetDAO petDAO = new PetDAO();
+        PetService petService = new PetService();
+        petService.setPetDAO(petDAO);
+
+        System.out.println(petService.toString());
+
     }
 }
