@@ -8,7 +8,7 @@ public class App {
     public static void main(String[] args) {
 
         ApplicationContext context =
-                new ClassPathXmlApplicationContext(new String[]{"Spring-Pet.xml"});
+                new ClassPathXmlApplicationContext(new String[]{"Spring-Autoscan.xml"});
 
         PetService petService = (PetService) context.getBean("petService");
 
