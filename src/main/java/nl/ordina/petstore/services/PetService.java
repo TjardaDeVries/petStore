@@ -2,9 +2,9 @@ package nl.ordina.petstore.services;
 
 import nl.ordina.petstore.dao.PetDAO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class PetService
 {
     @Autowired
