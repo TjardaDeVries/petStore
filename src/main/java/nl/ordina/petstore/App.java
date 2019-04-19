@@ -14,5 +14,9 @@ public class App {
 
         System.out.println(petService.toString());
 
+        for (String beanName : context.getBeanDefinitionNames()) {
+            System.out.println(beanName);
+        }
+
     }
 }
